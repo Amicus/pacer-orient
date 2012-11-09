@@ -1,3 +1,4 @@
+require '../pacer-orient'
 class RSpec::GraphRunner
   module Orient
     def all(usage_style = :read_write, indices = true, &block)
