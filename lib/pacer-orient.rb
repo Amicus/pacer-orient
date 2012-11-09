@@ -1,11 +1,9 @@
 lib_path = File.expand_path(File.join(File.dirname(__FILE__), '../lib'))
 $:.unshift lib_path unless $:.any? { |path| path == lib_path }
 
+require 'orientdb'
 require 'pacer' unless defined? Pacer
 require 'pacer-orient/version'
-
-require Pacer::Orient::JAR
-
 require 'pacer-orient/encoder'
 
 module Pacer
